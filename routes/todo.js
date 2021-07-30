@@ -27,17 +27,6 @@ router.patch('/', async (req, res) => {
     }
 })
 
-
-// router.get("/", async (req, res) => {
-//     try {
-//       const data = await Todo.find();
-//       res.status(200).json(data);
-//     } catch (err) {
-//       res.status(500).json(err);
-//   }
-// })
-
-
 router.get("/:id", async (req, res) => {
     try {
         const data = await Todo.findById(req.params.id);
