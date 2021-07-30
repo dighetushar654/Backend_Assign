@@ -1,0 +1,24 @@
+{
+  "name": "Backend_Assign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dighetushar654/Backend_Assign.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dighetushar654/Backend_Assign/issues"
+  },
+  "homepage": "https://github.com/dighetushar654/Backend_Assign#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.4"
+  }
+}
