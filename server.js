@@ -6,6 +6,8 @@ const helmet = require("helmet");
 const cors = require("cors");
 
 const todoRoute = require('./routes/todo');
+const userRoute = require('./routes/user');
+const authRoute = require('./routes/auth');
 
 
 
@@ -21,6 +23,8 @@ app.use(helmet());
 app.use(morgan("common"));
 app.use(cors());
 app.use("/todos", todoRoute);
+app.use("/users", userRoute);
+app.use("/auth", authRoute);
 
 // DB Config
 mongoose.connect(process.env.MONGO_URL, {
