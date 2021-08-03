@@ -4,6 +4,10 @@ const {Schema} = require("mongoose");
 
 
 const todoSchema = new mongoose.Schema({
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "users"
+    },
     name: {
         type: String,
         require: true,
@@ -16,10 +20,6 @@ const todoSchema = new mongoose.Schema({
     },
     category:{
         type: String
-    },
-    User: {
-        type: Schema.Types.ObjectId,
-        ref: "User"
     }
 },
    {timestamps: true});

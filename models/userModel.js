@@ -28,10 +28,11 @@ const userSchema = new mongoose.Schema({
     },
     role: {
         type: String,
-    },
-    todolist: [{
-        type: Schema.Types.ObjectId, ref: "Post"
-    }]
+        
+    }
+    // todolist: [{
+    //     type: Schema.Types.ObjectId, ref: "Post"
+    // }]
 },
 {timestamps: true});
 
