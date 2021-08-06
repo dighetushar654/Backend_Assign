@@ -26,6 +26,7 @@ app.use("/todos", todoRoute);
 app.use("/users", userRoute);
 app.use("/auth", authRoute);
 
+
 // DB Config
 mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
@@ -40,6 +41,7 @@ mongoose.connect(process.env.MONGO_URL, {
 app.get("/", (req, res) => {
     res.send("Hello From Server All Ok.........");
 });
+
 
 //Port for listening
 app.listen(Port, () => {
