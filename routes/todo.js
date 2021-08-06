@@ -57,7 +57,7 @@ router.get("/:id", async (req, res) => {
     }
   });
 
-router.get("/", async (req, res, next) => {
+router.get("/",auth , async (req, res, next) => {
     try {
         // sorting data using createdAT field in descending order
         const data = await Todo.find().sort({createdAt: '-1'});
